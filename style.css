@@ -208,6 +208,10 @@ aside a {
   display: none;
 }
 @media (max-width: 839px) {
+p,
+main a {
+  font-size: max(3.3vw, 18px);
+}  
   main {
     background-image: url(bilder/karta-komprimerad.webp);
   }
