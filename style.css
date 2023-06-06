@@ -7,44 +7,10 @@
   font-family: font;
   margin: 0;
   color: #c4ae08;
-}
-
-.knapp-bild-mindre {
-  width: 11.3vw;
-  min-width: 113px;
-}
-
-@media (min-width: 1228px) {
-  #english-website {
-    padding-top: 3em;
-  }
-  #english-website {
-    float: left;
-  }
-}
-
-@media (max-width: 1228px) {
-  #english-website {
-    padding-top: 2em;
-  }
-  #english-website {
-    float: left;
-  }
-}
-
-ul {
-  margin-top: 2em;
-}
-h1 {
   text-align: center;
-  -webkit-text-stroke: 0.07vw #000;
-}
-h2 {
-  text-align: center;
-  -webkit-text-stroke: 0.05vw #000;
 }
 
-#prenumerera {
+.prenumerera {
   margin-top: 1em;
   display: flex;
   justify-content: center;
@@ -52,8 +18,7 @@ h2 {
 }
 
 p,
-main a,
-li {
+main a {
   font-size: max(2.2vw, 23px);
   font-family: serif;
   -webkit-text-stroke: 0.02vw #c4ae08;
@@ -79,39 +44,28 @@ footer p {
   -webkit-text-stroke: 0.7px #000;
 }
 
-.indexdel a,
-li,
-p {
-  overflow-wrap: break-word;
-  font-family: serif;
-}
-a,
-p {
-  text-decoration: none;
-  text-align: center;
-}
-main a,
-main p {
-  -webkit-text-stroke: 0.02vw #c4ae08;
-}
-footer p {
-  -webkit-text-stroke: 0.04vw #000;
-}
-
-a p:hover,
 a:hover {
   color: grey;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
-main img:hover,
-#english-website img:hover {
+
+#kontaktadress {
+  word-wrap: break-word;
+}
+
+img:hover,
+nav a:hover {
   transition: 0.2s ease-in-out;
+}
+
+img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(196, 174, 8, 0.3);
 }
 
 main {
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 3em;
@@ -120,8 +74,8 @@ main {
 }
 header {
   border: solid#c4ae08 5px;
-  background-image: url(bilder/stora-nordiska-kriget-karta.webp);
-  background-position: center;
+  background-image: url(bilder/himmel.webp);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -129,112 +83,33 @@ footer {
   padding: 2em;
   background-color: #011030;
   border: solid#c4ae08 5px;
-  background-image: url(bilder/stora-nordiska-kriget-karta.webp);
+  background-image: url(bilder/konungens-likfard-2.webp);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .indexdel {
   width: 60vw;
-  min-width: 330px;
   border: solid#c4ae08 5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 2em;
-  background-image: url(bilder/bakgrund.webp);
+  background-image: url(bilder/sten-2.webp);
   background-position: center;
   background-size: cover;
 }
-.steamdel,
-.steamdeltva,
-.steamdeltre {
-  display: block;
+.steamdel {
   padding-top: 1vw;
+  min-width: 250px;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
   background-size: cover;
 }
-
-.indexdel a,
-.indexdel p {
-  padding-top: 1.5vw;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.indexdel img {
-  margin-top: 0.3em;
-}
-@media screen and (max-width: 841px) {
-  .steamdel {
-    display: none;
-  }
-}
-@media screen and (min-width: 841px) {
-  .steamdeltva {
-    display: none;
-  }
-}
-@media (max-width: 588px) {
-  .steamdeltva,
-  .steamdeltre {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-}
-
-@media (max-width: 839px) {
-    .lanseringsfilmsdel {
-    display: none !important;
-  }
-  .steamdeltva,
-  .steamdeltre {
-    min-width: 100px;
-  }
-  header .knapp-bild-mindre {
-    width: 15vw;
-    min-width: 113px;
-  }
-  .indexdel {
-    min-width: 220px;
-    width: 75vw;
-  }
-  .indexdel {
-    padding: 1em;
-  }
-  header {
-    padding: 1.5vw;
-  }
-}
-@media (min-width: 839px) {
-  .steamdel img,
-  .steamdeltva,
-  .steamdeltre {
-    min-width: 250px;
-  }
-  .indexdel {
-    min-width: 700px;
-    width: 60vw;
-  }
-  .indexdel {
-    padding: 1.5em;
-  }
-  header {
-    padding: 1.5vw;
-  }
-}
-.knapp-bild {
-  width: 20vw;
-  min-width: 180px;
-}
-.grandministudios-logga {
-  width: 6vw;
-  min-width: 50px;
+.steamdeltre div {
+  margin-top: 1.5em;
 }
 .youtubedel {
   padding-top: 1vw;
@@ -248,4 +123,170 @@ img {
 .youtubedel iframe {
   min-width: 550px;
   width: 35vw;
+}
+.steamdeltva {
+  padding-top: 1vw;
+  min-width: 437px;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+}
+.steamdeltva iframe {
+  width: 50vw;
+  min-width: 437px;
+}
+.indexdel a,
+.indexdel p {
+  padding-top: 1.5vw;
+}
+#stor-meny {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  max-width: 100%;
+  max-height: 50px;
+}
+#lankar {
+  grid-area: 1/2/2/3;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.knapp-bild {
+  width: 20vw;
+  min-width: 200px;
+}
+
+.knapp-bild-mindre {
+  width: 11.3vw;
+  min-width: 113px;
+}
+
+.logga-bild {
+  width: 24vw;
+  min-width: 200px;
+  padding-top: 1.5em;
+}
+
+.aside-area {
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  font-size: 2rem;
+}
+aside {
+  position: fixed;
+  top: 0;
+  left: -120vw;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.6s ease-in-out;
+  background-image: url(bilder/sten-2.webp);
+  background-position: center;
+  background-size: cover;
+}
+aside ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  height: 100%;
+}
+aside a {
+  font-size: 3rem;
+  transition: filter 0.6s ease-out;
+}
+.aside-toggle {
+  display: none;
+}
+@media (max-width: 839px) {
+  main {
+    background-image: url(bilder/karta-komprimerad.webp);
+  }
+  #stor-meny {
+    display: none !important;
+  }
+  .indexdel {
+    min-width: 220px;
+    width: 75vw;
+  }
+  .indexdel {
+    padding: 1em;
+  }
+  header {
+    padding: 1.5vw;
+  }
+}
+@media (min-width: 839px) {
+  main {
+    background-image: url(bilder/karta-komprimerad-storre.webp);
+  }
+  .aside-area {
+    display: none !important;
+  }
+  .indexdeltva .steamdeltre {
+    display: none;
+  }
+  .indexdel {
+    min-width: 700px;
+    width: 45vw;
+  }
+  .indexdel {
+    padding: 1.5em;
+  }
+  header {
+    padding: 1.5vw;
+  }
+}
+@media (min-width: 1228px) {
+  .steamdeltre {
+    display: none;
+  }
+  #english-website {
+    padding-top: 3em;
+  }
+  #english-website {
+    float: left;
+  }
+}
+@media (max-width: 839px) {
+  .lanseringsfilmsdel {
+    display: none !important;
+  }
+  header .knapp-bild-mindre {
+    width: 15vw;
+    min-width: 113px;
+  }
+}
+@media (max-width: 1228px) {
+  .steamdel {
+    display: none !important;
+  }
+  #english-website {
+    padding-top: 2em;
+  }
+  #english-website {
+    float: left;
+  }
+}
+@media (min-width: 1228px) {
+  .steamdeltva {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  .steamdeltva {
+    display: none;
+  }
+}
+.aside-toggle:checked + aside {
+  left: 0;
 }
